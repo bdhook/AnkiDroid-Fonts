@@ -1,1 +1,3 @@
-This repo will hold the Eclipse project for AnkiDroid Fonts, and installer for free unicode fonts to be used with the AnkiDroid app. This app will be under a GPL license.
+The initial AnkiDroid Fonts project code is copyright 2012 Bradley Hook, all rights reserved.
+
+This repo holds the Eclipse project for AnkiDroid Fonts, and installer for free unicode fonts to be used with the AnkiDroid app. This app is licensed under the GPL license. See the COPYING file for additional information.

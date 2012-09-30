@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="app_name">AnkiDroidFonts</string>
+    <string name="instructions">Click \"Install Fonts\" to put the GNU licensed unicode fonts into your Anki directory. You will still need to go into the preferences in AnkiDroid and set the default display font to FreeSerif.</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">AnkiDroid Fonts</string>
+	<string name="install_fonts">Install Fonts</string>
+	<string name="test">This software and the included fonts are covered by the GPL version 3. http://www.gnu.org/software/freefont/</string>
+</resources>
