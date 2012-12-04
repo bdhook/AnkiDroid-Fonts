@@ -18,6 +18,7 @@
 package org.coder7.ankidroidfonts;
 
 import java.io.FileOutputStream;
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -55,6 +56,7 @@ public class MainActivity extends Activity {
     	try {
     		in = assetManager.open(filename);
     		String target_path=Environment.getExternalStorageDirectory().getAbsolutePath() + "/AnkiDroid/fonts/" + filename;
+    		String target_path_test=Environment.getExternalStorageDirectory().getAbsolutePath() + "/AnkiDroid/";
 
     		Context context = getApplicationContext();
     		int duration = Toast.LENGTH_SHORT;
@@ -63,6 +65,15 @@ public class MainActivity extends Activity {
     		Toast toast = Toast.makeText(context, text, duration);
     		toast.show();
 
+    		File test_path = new File(target_path_test);
+    		if (test_path.isDirectory()!=true) {
+    			throw new RuntimeException("It appears AnkiDroid is not installed!");
+    		}
+    		File test_path2 = new File(target_path_test + "fonts");
+    		if (test_path2.isDirectory()!=true) {
+    			//Attempt to create the directory
+    			test_path2.mkdir();
+    		}
     		out = new FileOutputStream(target_path);
     		copyFile(in, out);
     		in.close();
